@@ -15,7 +15,7 @@ body {
 
 /* 🔴 CSS Property name Error here 👇 */
 body {
-  background-colo: #030a1e;
+  background-color: #030a1e; /* no r in color*/
 }
 
 .content {
@@ -37,7 +37,7 @@ h2 {
 }
 
 /* 🔴 CSS Syntax Error here 👇 */
-main
+main{ /*no "{" after main*/
   width: 100%;
   padding-top: 60px;
   display: flex;
@@ -47,11 +47,12 @@ main
 
 /* 🔴 CSS Syntax Error here 👇 */
 .forms {
+  /* stuff not aline */
   width: 100%;
-     max-width: 964px;
+  max-width: 964px;
   margin: 0 auto;
-  display; flex;
-   gap: 30px;
+  display: flex; /* had ";" instead of ":"*/
+  gap: 30px;
 }
 
 i {
@@ -61,7 +62,7 @@ i {
 
 /* 🔴 CSS Syntax Error here 👇 */
 .box {
-  background: linear-gradient(#17192c, #1a1c30),
+  background: linear-gradient(#17192c, #1a1c30); /*had "," instead of ";" */
   border: 1px solid #2c3044;
   padding: 30px;
   width: 100%;
@@ -106,11 +107,11 @@ i {
 .form-input-group input {
   display: flex;
   gap: 10px;
-      justify-content: space-between;
+  justify-content: space-between;
   padding: 12px;
   background: linear-gradient(45deg, #1e2338, #191e34);
   border: 1px solid #282d43;
-    borderRadius: 5px;
+  border-radius: 5px;/* didnt have "-" between border and radius and had r capitalize*/
 }
 
 .option-item-name,
@@ -129,7 +130,7 @@ i {
 /* 🔴 CSS Syntax Error here 👇 */
 .option-item-name .hint,
 .review-author-name .hint,
-.form-input-group label; {
+.form-input-group label { /* had a ","*/
   font-size: 12px;
   color: #b6b8c0;
 }
@@ -137,7 +138,7 @@ i {
 /* 🔴 CSS Syntax Error here 👇 */
 .option-item-selected {
   display: flex;
-  align-items = center;
+  align-items: center; /* had "=" instead of ":"*/
   gap: 16px;
 }
 
@@ -166,7 +167,7 @@ label {
 
 /* 🔴 CSS property name Error here 👇 */
 [type='radio']:checked ~ label .circle {
-  BackgroundColor: white;
+  background-color: white;/* didnt have "-" between background and color and had c capitalize*/
   border: 4px solid #5f57ff;
 }
 
@@ -180,7 +181,7 @@ label {
   gap: 20px;
   padding: 20px;
   overflow: hidden;
-  Pposition: relative;
+  position: relative; /* had a extra p*/
 }
 
 /* 🔴 CSS syntax Error here 👇 */
@@ -192,7 +193,7 @@ label {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url(/assets/backgrounds/review-bg.png');
+  background-image: url('/assets/backgrounds/review-bg.png'); /*didnt have the full '' */
   background-size: cover;
 }
 
@@ -378,5 +379,5 @@ footer ul a {
 
 /* 🔴 CSS property name Error here 👇 */
 footer ul li span a {
-  colorrrrr: rgb(218, 82, 82);
+  color: rgb(218, 82, 82); /*one to many "r's" in color*/
 }
